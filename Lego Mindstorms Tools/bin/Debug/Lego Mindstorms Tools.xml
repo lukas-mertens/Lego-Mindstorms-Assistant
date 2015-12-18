@@ -1,0 +1,68 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Lego Mindstorms Tools
+</name>
+</assembly>
+<members>
+<member name="M:Lego_Mindstorms_Tools.EntfernungMotorbewegung.RefreshEE">
+ <summary>
+ Führt Berechnungen der Einzeleingabe durch
+ </summary>
+</member>
+<member name="M:Lego_Mindstorms_Tools.EntfernungMotorbewegung.RefreshME">
+ <summary>
+ Führt Berechnungen der Mehrfacheingabe durch
+ </summary>
+</member>
+<member name="M:Lego_Mindstorms_Tools.EntfernungMotorbewegung.nud_EE_Input_ValueChanged(System.Object,System.EventArgs)">
+ <summary>
+ Ausgelöst durch: nud_EE_Input.ValueChanged
+ </summary>
+</member>
+<member name="M:Lego_Mindstorms_Tools.EntfernungMotorbewegung.ComboBox1_SelectedIndexChanged(System.Object,System.EventArgs)">
+ <summary>
+ Ausgelöst durch: cb_S_SelectWheel.SelectedIndexChanged
+ </summary>
+</member>
+<member name="T:Lego_Mindstorms_Tools.My.Resources.Resources">
+<summary>
+  Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
+</summary>
+</member>
+<member name="P:Lego_Mindstorms_Tools.My.Resources.Resources.ResourceManager">
+<summary>
+  Gibt die zwischengespeicherte ResourceManager-Instanz zurück, die von dieser Klasse verwendet wird.
+</summary>
+</member>
+<member name="P:Lego_Mindstorms_Tools.My.Resources.Resources.Culture">
+<summary>
+  Überschreibt die CurrentUICulture-Eigenschaft des aktuellen Threads für alle
+  Ressourcenzuordnungen, die diese stark typisierte Ressourcenklasse verwenden.
+</summary>
+</member>
+<member name="P:Lego_Mindstorms_Tools.My.Resources.Resources.Reifen_1">
+<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Lego_Mindstorms_Tools.My.Resources.Resources.Reifen_2">
+<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Lego_Mindstorms_Tools.My.Resources.Resources.Reifen_3">
+<summary>
+  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="M:Lego_Mindstorms_Tools.ReifenEigenschaften.GetValue(System.String,System.Int32)">
+ <summary>
+ Gibt Eigenschaft eines Reifens zurück
+ </summary>
+ <param name="Eigenschaft">Name der Eigenschaft</param>
+ <param name="Reifen">ID des Reifens</param>
+</member>
+</members>
+</doc>
