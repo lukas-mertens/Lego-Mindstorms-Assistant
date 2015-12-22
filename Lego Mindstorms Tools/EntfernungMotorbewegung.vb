@@ -1,12 +1,13 @@
 ﻿Public Class EntfernungMotorbewegung
     Dim Pi As Double = 3.14159265
+    Dim KorrekturWert As Double
 
     ''' <summary>
     ''' Führt Berechnungen der Einzeleingabe durch
     ''' </summary>
     Sub RefreshEE()
-        lb_EE_OutputUmd.Text = nud_EE_Input.Value / (ReifenEigenschaften.GetValue("Durchmesser", cb_S_SelectWheel.SelectedIndex) * Pi)
-        lb_EE_OutputGrad.Text = nud_EE_Input.Value / (ReifenEigenschaften.GetValue("Durchmesser", cb_S_SelectWheel.SelectedIndex) * Pi) * 360
+        lb_EE_OutputUmd.Text = (nud_EE_Input.Value / (ReifenEigenschaften.GetValue("Durchmesser", cb_S_SelectWheel.SelectedIndex) * Pi)) * KorrekturWert
+        lb_EE_OutputGrad.Text = (nud_EE_Input.Value / (ReifenEigenschaften.GetValue("Durchmesser", cb_S_SelectWheel.SelectedIndex) * Pi) * 360) * KorrekturWert
     End Sub
 
     ''' <summary>
@@ -14,8 +15,8 @@
     ''' </summary>
     Sub RefreshME()
         For i = 0 To lv_ME_Output.Items.Count - 1
-            lv_ME_Output.Items.Item(i).SubItems.Item(1).Text = Integer.Parse(lv_ME_Output.Items.Item(i).Text) / (ReifenEigenschaften.GetValue("Durchmesser", cb_S_SelectWheel.SelectedIndex) * Pi)
-            lv_ME_Output.Items.Item(i).SubItems.Item(2).Text = Integer.Parse(lv_ME_Output.Items.Item(i).Text) / (ReifenEigenschaften.GetValue("Durchmesser", cb_S_SelectWheel.SelectedIndex) * Pi) * 360
+            lv_ME_Output.Items.Item(i).SubItems.Item(1).Text = (Integer.Parse(lv_ME_Output.Items.Item(i).Text) / (ReifenEigenschaften.GetValue("Durchmesser", cb_S_SelectWheel.SelectedIndex) * Pi)) * KorrekturWert
+            lv_ME_Output.Items.Item(i).SubItems.Item(2).Text = (Integer.Parse(lv_ME_Output.Items.Item(i).Text) / (ReifenEigenschaften.GetValue("Durchmesser", cb_S_SelectWheel.SelectedIndex) * Pi) * 360) * KorrekturWert
         Next
     End Sub
 
@@ -35,12 +36,25 @@
         RefreshME()
     End Sub
 
+    ''' <summary>
+    ''' Ausgelöst durch Button zum hinzufügen eines Wertes in der Mehrfacheingabe
+    ''' </summary>
     Private Sub bt_ME_AddItem_Click(sender As Object, e As EventArgs) Handles bt_ME_AddItem.Click
         With lv_ME_Output.Items.Add(nud_ME_Input.Value)
             .SubItems.Add("")
             .SubItems.Add("")
         End With
         nud_ME_Input.Value = 0
+        RefreshME()
+    End Sub
+
+    ''' <summary>
+    ''' Ausgelöst durch Veränderung des Sliders zum verändern des Korrekturwertes in der Selektion
+    ''' </summary>
+    Private Sub TrackBar_S_Korrektur_Scroll(sender As Object, e As EventArgs) Handles TrackBar_S_Korrektur.Scroll
+        Label_S_Korrekturwert.Text = "Korrektur-Wert: " & TrackBar_S_Korrektur.Value * 10 & "%" 'Änderung des Labels, für die Anzeige des Korrekturwertes
+        KorrekturWert = (TrackBar_S_Korrektur.Value / 10) + 1 'Festlegen des Korrekturwertes
+        RefreshEE()
         RefreshME()
     End Sub
 End Class

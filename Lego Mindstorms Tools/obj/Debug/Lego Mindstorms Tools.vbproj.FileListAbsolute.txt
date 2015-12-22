@@ -19,3 +19,20 @@ C:\Users\Tatze\Google Drive\VB\Lokale Repositorys\Lego-Mindstorms-Assistant\Lego
 C:\Users\Tatze\Google Drive\VB\Lokale Repositorys\Lego-Mindstorms-Assistant\Lego Mindstorms Tools\obj\Debug\Lego Mindstorms Tools.exe
 C:\Users\Tatze\Google Drive\VB\Lokale Repositorys\Lego-Mindstorms-Assistant\Lego Mindstorms Tools\obj\Debug\Lego Mindstorms Tools.xml
 C:\Users\Tatze\Google Drive\VB\Lokale Repositorys\Lego-Mindstorms-Assistant\Lego Mindstorms Tools\obj\Debug\Lego Mindstorms Tools.pdb
+C:\Users\Schule\Source\Repos\Lego-Mindstorms-Assistant\Lego Mindstorms Tools\bin\Debug\Lego Mindstorms Tools.exe.config
+C:\Users\Schule\Source\Repos\Lego-Mindstorms-Assistant\Lego Mindstorms Tools\obj\Debug\Lego Mindstorms Tools.exe
+C:\Users\Schule\Source\Repos\Lego-Mindstorms-Assistant\Lego Mindstorms Tools\obj\Debug\Lego Mindstorms Tools.xml
+C:\Users\Schule\Source\Repos\Lego-Mindstorms-Assistant\Lego Mindstorms Tools\obj\Debug\Lego Mindstorms Tools.pdb
+C:\Users\Schule\Source\Repos\Lego-Mindstorms-Assistant\Lego Mindstorms Tools\obj\Debug\Lego Mindstorms Tools.vbprojResolveAssemblyReference.cache
+C:\Users\Schule\Source\Repos\Lego-Mindstorms-Assistant\Lego Mindstorms Tools\obj\Debug\Lego_Mindstorms_Tools.EntfernungMotorbewegung.resources
+C:\Users\Schule\Source\Repos\Lego-Mindstorms-Assistant\Lego Mindstorms Tools\obj\Debug\Lego_Mindstorms_Tools.Form1.resources
+C:\Users\Schule\Source\Repos\Lego-Mindstorms-Assistant\Lego Mindstorms Tools\obj\Debug\Lego_Mindstorms_Tools.Resources.resources
+C:\Users\Schule\Source\Repos\Lego-Mindstorms-Assistant\Lego Mindstorms Tools\obj\Debug\Lego Mindstorms Tools.vbproj.GenerateResource.Cache
+C:\Users\Schule\Source\Repos\Lego-Mindstorms-Assistant\Lego Mindstorms Tools\obj\Debug\Lego Mindstorms Tools.TrustInfo.xml
+C:\Users\Schule\Source\Repos\Lego-Mindstorms-Assistant\Lego Mindstorms Tools\bin\Debug\Lego Mindstorms Tools.exe.manifest
+C:\Users\Schule\Source\Repos\Lego-Mindstorms-Assistant\Lego Mindstorms Tools\bin\Debug\Lego Mindstorms Tools.application
+C:\Users\Schule\Source\Repos\Lego-Mindstorms-Assistant\Lego Mindstorms Tools\bin\Debug\Lego Mindstorms Tools.exe
+C:\Users\Schule\Source\Repos\Lego-Mindstorms-Assistant\Lego Mindstorms Tools\bin\Debug\Lego Mindstorms Tools.pdb
+C:\Users\Schule\Source\Repos\Lego-Mindstorms-Assistant\Lego Mindstorms Tools\bin\Debug\Lego Mindstorms Tools.xml
+C:\Users\Schule\Source\Repos\Lego-Mindstorms-Assistant\Lego Mindstorms Tools\obj\Debug\Lego Mindstorms Tools.exe.manifest
+C:\Users\Schule\Source\Repos\Lego-Mindstorms-Assistant\Lego Mindstorms Tools\obj\Debug\Lego Mindstorms Tools.application

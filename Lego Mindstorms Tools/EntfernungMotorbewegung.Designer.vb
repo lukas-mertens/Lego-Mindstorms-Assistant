@@ -26,7 +26,7 @@ Partial Class EntfernungMotorbewegung
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EntfernungMotorbewegung))
         Me.cb_S_SelectWheel = New System.Windows.Forms.ComboBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label_S_Korrekturwert = New System.Windows.Forms.Label()
         Me.TrackBar_S_Korrektur = New System.Windows.Forms.TrackBar()
         Me.pb_S_Preview = New System.Windows.Forms.PictureBox()
         Me.nud_EE_Input = New System.Windows.Forms.NumericUpDown()
@@ -72,7 +72,7 @@ Partial Class EntfernungMotorbewegung
         Me.GroupBox1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Controls.Add(Me.Label_S_Korrekturwert)
         Me.GroupBox1.Controls.Add(Me.TrackBar_S_Korrektur)
         Me.GroupBox1.Controls.Add(Me.cb_S_SelectWheel)
         Me.GroupBox1.Controls.Add(Me.pb_S_Preview)
@@ -83,15 +83,15 @@ Partial Class EntfernungMotorbewegung
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Reifen-Auswahl"
         '
-        'Label1
+        'Label_S_Korrekturwert
         '
-        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 353)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(76, 13)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Korrektur-Wert"
+        Me.Label_S_Korrekturwert.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Label_S_Korrekturwert.AutoSize = True
+        Me.Label_S_Korrekturwert.Location = New System.Drawing.Point(7, 353)
+        Me.Label_S_Korrekturwert.Name = "Label_S_Korrekturwert"
+        Me.Label_S_Korrekturwert.Size = New System.Drawing.Size(96, 13)
+        Me.Label_S_Korrekturwert.TabIndex = 3
+        Me.Label_S_Korrekturwert.Text = "Korrektur-Wert: 0%"
         '
         'TrackBar_S_Korrektur
         '
@@ -292,6 +292,6 @@ Partial Class EntfernungMotorbewegung
     Friend WithEvents lv_ME_Ergebnis_Input As ColumnHeader
     Friend WithEvents lv_ME_Ergebnis_Umd As ColumnHeader
     Friend WithEvents lv_ME_Ergebnis_Grad As ColumnHeader
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Label_S_Korrekturwert As Label
     Friend WithEvents TrackBar_S_Korrektur As TrackBar
 End Class
