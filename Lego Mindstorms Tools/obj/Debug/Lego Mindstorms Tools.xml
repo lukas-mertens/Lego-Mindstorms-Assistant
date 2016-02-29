@@ -16,6 +16,11 @@ Lego Mindstorms Tools
  Führt Berechnungen der Mehrfacheingabe durch
  </summary>
 </member>
+<member name="M:Lego_Mindstorms_Tools.EntfernungMotorbewegung.RefreshKorrekturWert">
+ <summary>
+ Berechnet den Korrekturwert
+ </summary>
+</member>
 <member name="M:Lego_Mindstorms_Tools.EntfernungMotorbewegung.nud_EE_Input_ValueChanged(System.Object,System.EventArgs)">
  <summary>
  Ausgelöst durch: nud_EE_Input.ValueChanged
@@ -24,6 +29,21 @@ Lego Mindstorms Tools
 <member name="M:Lego_Mindstorms_Tools.EntfernungMotorbewegung.ComboBox1_SelectedIndexChanged(System.Object,System.EventArgs)">
  <summary>
  Ausgelöst durch: cb_S_SelectWheel.SelectedIndexChanged
+ </summary>
+</member>
+<member name="M:Lego_Mindstorms_Tools.EntfernungMotorbewegung.bt_ME_AddItem_Click(System.Object,System.EventArgs)">
+ <summary>
+ Ausgelöst durch Button zum hinzufügen eines Wertes in der Mehrfacheingabe
+ </summary>
+</member>
+<member name="M:Lego_Mindstorms_Tools.EntfernungMotorbewegung.TrackBar_S_Korrektur_Scroll(System.Object,System.EventArgs)">
+ <summary>
+ Ausgelöst durch Veränderung des groben Sliders zum verändern des Korrekturwertes in der Selektion
+ </summary>
+</member>
+<member name="M:Lego_Mindstorms_Tools.EntfernungMotorbewegung.TrackBar_S_Korrektur_Fein_Scroll(System.Object,System.EventArgs)">
+ <summary>
+ Ausgelöst durch Veränderung des feinen Sliders zum verändern des Korrekturwertes in der Selektion
  </summary>
 </member>
 <member name="T:Lego_Mindstorms_Tools.My.Resources.Resources">
@@ -63,6 +83,46 @@ Lego Mindstorms Tools
  </summary>
  <param name="Eigenschaft">Name der Eigenschaft</param>
  <param name="Reifen">ID des Reifens</param>
+</member>
+<member name="M:Lego_Mindstorms_Tools.RotationMotorbewegung.RefreshEE">
+ <summary>
+ Führt Berechnungen der Einzeleingabe durch
+ </summary>
+</member>
+<member name="M:Lego_Mindstorms_Tools.RotationMotorbewegung.RefreshME">
+ <summary>
+ Führt Berechnungen der Mehrfacheingabe durch
+ </summary>
+</member>
+<member name="M:Lego_Mindstorms_Tools.RotationMotorbewegung.RefreshKorrekturWert">
+ <summary>
+ Berechnet den Korrekturwert
+ </summary>
+</member>
+<member name="M:Lego_Mindstorms_Tools.RotationMotorbewegung.nud_EE_Input_ValueChanged(System.Object,System.EventArgs)">
+ <summary>
+ Ausgelöst durch: nud_EE_Input.ValueChanged
+ </summary>
+</member>
+<member name="M:Lego_Mindstorms_Tools.RotationMotorbewegung.ComboBox1_SelectedIndexChanged(System.Object,System.EventArgs)">
+ <summary>
+ Ausgelöst durch: cb_S_SelectWheel.SelectedIndexChanged
+ </summary>
+</member>
+<member name="M:Lego_Mindstorms_Tools.RotationMotorbewegung.bt_ME_AddItem_Click(System.Object,System.EventArgs)">
+ <summary>
+ Ausgelöst durch Button zum hinzufügen eines Wertes in der Mehrfacheingabe
+ </summary>
+</member>
+<member name="M:Lego_Mindstorms_Tools.RotationMotorbewegung.TrackBar_S_Korrektur_Scroll(System.Object,System.EventArgs)">
+ <summary>
+ Ausgelöst durch Veränderung des groben Sliders zum verändern des Korrekturwertes in der Selektion
+ </summary>
+</member>
+<member name="M:Lego_Mindstorms_Tools.RotationMotorbewegung.TrackBar_S_Korrektur_Fein_Scroll(System.Object,System.EventArgs)">
+ <summary>
+ Ausgelöst durch Veränderung des feinen Sliders zum verändern des Korrekturwertes in der Selektion
+ </summary>
 </member>
 </members>
 </doc>

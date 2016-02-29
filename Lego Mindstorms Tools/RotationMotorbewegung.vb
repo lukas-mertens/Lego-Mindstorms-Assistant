@@ -1,4 +1,4 @@
-﻿Public Class EntfernungMotorbewegung
+﻿Public Class RotationMotorbewegung
     Dim Pi As Double = 3.14159265
     Dim KorrekturWert As Double
 
@@ -6,8 +6,8 @@
     ''' Führt Berechnungen der Einzeleingabe durch
     ''' </summary>
     Sub RefreshEE()
-        lb_EE_OutputUmd.Text = (nud_EE_Input.Value / (ReifenEigenschaften.GetValue("Durchmesser", cb_S_SelectWheel.SelectedIndex) * Pi)) * KorrekturWert
-        lb_EE_OutputGrad.Text = (nud_EE_Input.Value / (ReifenEigenschaften.GetValue("Durchmesser", cb_S_SelectWheel.SelectedIndex) * Pi) * 360) * KorrekturWert
+        lb_EE_OutputUmd.Text = ((nud_S_Spurbreite.Value * Pi) / (ReifenEigenschaften.GetValue("Durchmesser", cb_S_SelectWheel.SelectedIndex) * Pi)) / (360 / nud_EE_Input.Value) * KorrekturWert
+        lb_EE_OutputUmd.Text = ((nud_S_Spurbreite.Value * Pi) / (ReifenEigenschaften.GetValue("Durchmesser", cb_S_SelectWheel.SelectedIndex) * Pi)) / (360 / nud_EE_Input.Value) * 360 * KorrekturWert
     End Sub
 
     ''' <summary>

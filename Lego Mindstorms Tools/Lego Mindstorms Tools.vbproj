@@ -140,6 +140,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="ReifenEigenschaften.vb" />
+    <Compile Include="RotationMotorbewegung.Designer.vb">
+      <DependentUpon>RotationMotorbewegung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RotationMotorbewegung.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="EntfernungMotorbewegung.resx">
@@ -153,6 +159,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RotationMotorbewegung.resx">
+      <DependentUpon>RotationMotorbewegung.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
