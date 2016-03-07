@@ -23,6 +23,8 @@ Partial Class RotationMotorbewegung
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lbl_S_Spurbreite = New System.Windows.Forms.Label()
+        Me.nud_S_Spurbreite = New System.Windows.Forms.NumericUpDown()
         Me.TrackBar_S_Korrektur_Fein = New System.Windows.Forms.TrackBar()
         Me.Label_S_Korrekturwert = New System.Windows.Forms.Label()
         Me.TrackBar_S_Korrektur_Grob = New System.Windows.Forms.TrackBar()
@@ -42,9 +44,8 @@ Partial Class RotationMotorbewegung
         Me.lv_ME_Ergebnis_Input = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.lv_ME_Ergebnis_Umd = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.lv_ME_Ergebnis_Grad = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.nud_S_Spurbreite = New System.Windows.Forms.NumericUpDown()
-        Me.lbl_S_Spurbreite = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.nud_S_Spurbreite, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar_S_Korrektur_Fein, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar_S_Korrektur_Grob, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pb_S_Preview, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,7 +56,6 @@ Partial Class RotationMotorbewegung
         CType(Me.nud_EE_Input, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox3.SuspendLayout()
         CType(Me.nud_ME_Input, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.nud_S_Spurbreite, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -76,6 +76,27 @@ Partial Class RotationMotorbewegung
         Me.GroupBox1.TabIndex = 3
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Reifen-Auswahl"
+        '
+        'lbl_S_Spurbreite
+        '
+        Me.lbl_S_Spurbreite.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbl_S_Spurbreite.AutoSize = True
+        Me.lbl_S_Spurbreite.Location = New System.Drawing.Point(7, 259)
+        Me.lbl_S_Spurbreite.Name = "lbl_S_Spurbreite"
+        Me.lbl_S_Spurbreite.Size = New System.Drawing.Size(78, 13)
+        Me.lbl_S_Spurbreite.TabIndex = 6
+        Me.lbl_S_Spurbreite.Text = "Spurbreite (cm)"
+        '
+        'nud_S_Spurbreite
+        '
+        Me.nud_S_Spurbreite.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.nud_S_Spurbreite.DecimalPlaces = 1
+        Me.nud_S_Spurbreite.Location = New System.Drawing.Point(7, 278)
+        Me.nud_S_Spurbreite.Name = "nud_S_Spurbreite"
+        Me.nud_S_Spurbreite.Size = New System.Drawing.Size(207, 20)
+        Me.nud_S_Spurbreite.TabIndex = 5
         '
         'TrackBar_S_Korrektur_Fein
         '
@@ -260,27 +281,6 @@ Partial Class RotationMotorbewegung
         '
         Me.lv_ME_Ergebnis_Grad.Text = "Grad"
         '
-        'nud_S_Spurbreite
-        '
-        Me.nud_S_Spurbreite.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.nud_S_Spurbreite.DecimalPlaces = 1
-        Me.nud_S_Spurbreite.Location = New System.Drawing.Point(7, 278)
-        Me.nud_S_Spurbreite.Name = "nud_S_Spurbreite"
-        Me.nud_S_Spurbreite.Size = New System.Drawing.Size(207, 20)
-        Me.nud_S_Spurbreite.TabIndex = 5
-        '
-        'lbl_S_Spurbreite
-        '
-        Me.lbl_S_Spurbreite.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbl_S_Spurbreite.AutoSize = True
-        Me.lbl_S_Spurbreite.Location = New System.Drawing.Point(7, 259)
-        Me.lbl_S_Spurbreite.Name = "lbl_S_Spurbreite"
-        Me.lbl_S_Spurbreite.Size = New System.Drawing.Size(78, 13)
-        Me.lbl_S_Spurbreite.TabIndex = 6
-        Me.lbl_S_Spurbreite.Text = "Spurbreite (cm)"
-        '
         'RotationMotorbewegung
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -293,6 +293,7 @@ Partial Class RotationMotorbewegung
         Me.Text = "RotationMotorbewegung"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        CType(Me.nud_S_Spurbreite, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar_S_Korrektur_Fein, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar_S_Korrektur_Grob, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.pb_S_Preview, System.ComponentModel.ISupportInitialize).EndInit()
@@ -305,7 +306,6 @@ Partial Class RotationMotorbewegung
         CType(Me.nud_EE_Input, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         CType(Me.nud_ME_Input, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.nud_S_Spurbreite, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

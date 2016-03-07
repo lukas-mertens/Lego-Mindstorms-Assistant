@@ -34,7 +34,7 @@
     ''' Ausgelöst durch: nud_EE_Input.ValueChanged
     ''' </summary>
     Private Sub nud_EE_Input_ValueChanged(sender As Object, e As EventArgs) Handles nud_EE_Input.ValueChanged
-        RefreshEE()
+        RefreshKorrekturWert()
     End Sub
 
     ''' <summary>
@@ -42,8 +42,7 @@
     ''' </summary>
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cb_S_SelectWheel.SelectedIndexChanged
         pb_S_Preview.Image = My.Resources.ResourceManager.GetObject("Reifen_" & cb_S_SelectWheel.SelectedIndex + 1)
-        RefreshEE()
-        RefreshME()
+        RefreshKorrekturWert()
     End Sub
 
     ''' <summary>
@@ -55,7 +54,7 @@
             .SubItems.Add("")
         End With
         nud_ME_Input.Value = 0
-        RefreshME()
+        RefreshKorrekturWert()
     End Sub
 
     ''' <summary>
